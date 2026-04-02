@@ -1,22 +1,22 @@
-# Stock News Alert
+# Stock News Alert 📈📰
 
 A Python script that tracks Tesla stock price movement and sends top related news headlines by SMS when the daily change is significant.
 
-## What this project does
+## What this project does 🚀
 
-- Fetches recent TSLA closing prices using Yahoo Finance.
-- Calculates percentage change between the last two trading days.
-- If the absolute change is greater than 2%, fetches recent Tesla news.
-- Sends up to 3 headlines via Twilio SMS.
+- Fetches recent TSLA closing prices using Yahoo Finance 📊
+- Calculates percentage change between the last two trading days 🧮
+- If the absolute change is greater than 2%, fetches recent Tesla news 🗞️
+- Sends up to 3 headlines via Twilio SMS 📱
 
-## Tech stack
+## Tech stack 🛠️
 
 - Python 3.x
 - `requests`
 - `yfinance`
 - `twilio`
 
-## Setup
+## Setup ⚙️
 
 1. Clone or download this project.
 2. Create and activate a virtual environment (recommended).
@@ -26,7 +26,7 @@ A Python script that tracks Tesla stock price movement and sends top related new
 pip install requests yfinance twilio
 ```
 
-## Configuration
+## Configuration 🔐
 
 Update the following variables in `main.py`:
 
@@ -41,7 +41,7 @@ You can also change:
 - `STOCK_NAME` (default: TSLA)
 - `COMPANY_NAME` (default: Tesla Inc)
 
-## How to get the NewsAPI key
+## How to get the NewsAPI key 🔑
 
 1. Go to https://newsapi.org.
 2. Click **Get API Key** and create a free account.
@@ -49,7 +49,7 @@ You can also change:
 4. Open your account dashboard and copy your API key.
 5. Paste that value into `NEWS_API` in `main.py`.
 
-## How to get Twilio SID, Auth Token, and phone numbers
+## How to get Twilio SID, Auth Token, and phone numbers ☎️
 
 1. Go to https://www.twilio.com/try-twilio and create an account.
 2. Complete email and phone verification.
@@ -65,19 +65,19 @@ You can also change:
    - **Console > Account > API keys & tokens / Verified Caller IDs**
    - Twilio may block SMS to unverified numbers on trial plans.
 
-## Run
+## Run ▶️
 
 ```bash
 python main.py
 ```
 
-## Notes
+## Notes 📝
 
-- This script uses a threshold of 2% price movement.
-- News is fetched using `qInTitle` with the company name.
-- Keep API keys and tokens private. For production, use environment variables instead of hardcoding secrets.
+- This script uses a threshold of 2% price movement 📉📈
+- News is fetched using `qInTitle` with the company name 🧠
+- Keep API keys and tokens private. For production, use environment variables instead of hardcoding secrets 🔒
 
-## File structure
+## File structure 📂
 
 - `main.py`: Core script logic
 - `README.md`: Project documentation
