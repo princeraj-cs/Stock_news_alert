@@ -5,7 +5,7 @@ from twilio.rest import Client
 STOCK_NAME = "TSLA"
 COMPANY_NAME = "Tesla Inc"
 
-NEWS_API = "2117b44b81374b408e768ee7b21600f4" # Stock news api- https://newsapi.org/docs
+NEWS_API = "ADD_YOUR API" # Stock news api- https://newsapi.org/docs
 
 STOCK_ENDPOINT = "https://www.alphavantage.co/query"
 NEWS_ENDPOINT = "https://newsapi.org/v2/everything"
